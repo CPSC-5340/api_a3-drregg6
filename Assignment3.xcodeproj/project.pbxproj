@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E03F29BE957F00DD981A /* Assignment3App.swift */; };
-		ACF5E04229BE957F00DD981A /* HarryPotterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* HarryPotterApp.swift */; };
+		ACF5E04229BE957F00DD981A /* HogwartsHouses.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* HogwartsHouses.swift */; };
 		ACF5E04429BE958000DD981A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04329BE958000DD981A /* Assets.xcassets */; };
 		ACF5E04729BE958000DD981A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04629BE958000DD981A /* Preview Assets.xcassets */; };
+		FDA8B00729CB8FF9001C7961 /* HogwartsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA8B00629CB8FF9001C7961 /* HogwartsModel.swift */; };
+		FDA8B00B29CB923A001C7961 /* HeadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA8B00A29CB9239001C7961 /* HeadModel.swift */; };
+		FDA8B00D29CB925C001C7961 /* TraitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA8B00C29CB925C001C7961 /* TraitModel.swift */; };
+		FDA8B00F29CB92BB001C7961 /* HogwartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA8B00E29CB92BB001C7961 /* HogwartsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACF5E03C29BE957F00DD981A /* Assignment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF5E03F29BE957F00DD981A /* Assignment3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment3App.swift; sourceTree = "<group>"; };
-		ACF5E04129BE957F00DD981A /* HarryPotterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterApp.swift; sourceTree = "<group>"; };
+		ACF5E04129BE957F00DD981A /* HogwartsHouses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsHouses.swift; sourceTree = "<group>"; };
 		ACF5E04329BE958000DD981A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF5E04629BE958000DD981A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDA8B00629CB8FF9001C7961 /* HogwartsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsModel.swift; sourceTree = "<group>"; };
+		FDA8B00A29CB9239001C7961 /* HeadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadModel.swift; sourceTree = "<group>"; };
+		FDA8B00C29CB925C001C7961 /* TraitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitModel.swift; sourceTree = "<group>"; };
+		FDA8B00E29CB92BB001C7961 /* HogwartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogwartsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				ACF5E03F29BE957F00DD981A /* Assignment3App.swift */,
-				ACF5E04129BE957F00DD981A /* HarryPotterApp.swift */,
+				FDA8B00E29CB92BB001C7961 /* HogwartsViewModel.swift */,
+				FDA8B00429CB8B72001C7961 /* Models */,
+				FDA8B00529CB8B79001C7961 /* Views */,
 				ACF5E04329BE958000DD981A /* Assets.xcassets */,
 				ACF5E04529BE958000DD981A /* Preview Content */,
 			);
@@ -65,6 +75,24 @@
 				ACF5E04629BE958000DD981A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDA8B00429CB8B72001C7961 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDA8B00629CB8FF9001C7961 /* HogwartsModel.swift */,
+				FDA8B00C29CB925C001C7961 /* TraitModel.swift */,
+				FDA8B00A29CB9239001C7961 /* HeadModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDA8B00529CB8B79001C7961 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACF5E04129BE957F00DD981A /* HogwartsHouses.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF5E04229BE957F00DD981A /* HarryPotterApp.swift in Sources */,
+				ACF5E04229BE957F00DD981A /* HogwartsHouses.swift in Sources */,
+				FDA8B00D29CB925C001C7961 /* TraitModel.swift in Sources */,
+				FDA8B00B29CB923A001C7961 /* HeadModel.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */,
+				FDA8B00729CB8FF9001C7961 /* HogwartsModel.swift in Sources */,
+				FDA8B00F29CB92BB001C7961 /* HogwartsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
