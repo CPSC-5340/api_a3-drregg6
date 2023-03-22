@@ -18,13 +18,13 @@ class HogwartsViewModel: ObservableObject {
         if let url = URL(string: self.url) {
             do {
                 let (data, _) = try await URLSession.shared.data(from: url)
-                guard let results = try JSONDecoder().decode(HogwartsResults?.self, from: data) else {
+                guard let results = try JSONDecoder().decode([HouseModel]?.self, from: data) else {
                     self.hasError.toggle()
                     self.error = HouseModelError.decodeError
                     return
                 }
                 // This line might be wrong
-                self.houseData = results.hogwartsData
+                self.houseData = results
             } catch {
                 self.hasError.toggle()
                 self.error = HouseModelError.customError(error: error)
