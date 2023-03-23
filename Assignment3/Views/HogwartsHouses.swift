@@ -14,7 +14,7 @@ struct HogwartsHouses: View {
             List {
                 ForEach(hogwartsvm.houseData) { house in
                     NavigationLink {
-                        LinkView()
+                        HouseDetailView(house: house)
                     } label: {
                         Text(house.name)
                     }
