@@ -37,9 +37,3 @@ struct ContentView_Previews: PreviewProvider {
         HogwartsHouses()
     }
 }
-
-struct LinkView: View {
-    var body: some View {
-        Text("Hello World!")
-    }
-}
